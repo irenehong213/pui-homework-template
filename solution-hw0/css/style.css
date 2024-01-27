@@ -1,0 +1,131 @@
+
+.productname { 
+    text-decoration: underline;
+    color: black
+}
+
+.link {
+    text-transform: uppercase; 
+    font-size: 20;
+    text-align:center;
+}
+
+.currentlink{
+    background-color: yellow;
+    font-weight:bold;
+    color: black;
+
+}
+
+.notcurrentlink{
+    color: black;
+    text-decoration:none;
+
+}
+
+hr {
+    border: none;
+    height: 3px;
+    color: black; 
+    background-color:black; 
+  }
+
+#subheader {
+    font-size: 40;
+    text-align:center;
+}
+#productphoto {
+    border: black 3px solid;
+    margin-top: 30px;
+}
+.productgallery {
+    text-align:center;
+}
+
+#productdescription {
+    text-align:left;
+    width:400px;
+    margin:auto;
+    color:black;
+}
+
+.productitem:hover {
+    width:450px;
+    margin:auto; 
+    background-color: yellow;
+}
+
+#productdetailphoto {
+    border: black 3px solid;
+}
+
+.dropdown{
+    text-align:center;
+    
+}
+
+#productprice{
+    font-weight: bold; 
+}
+
+#productbutton{
+    background-color: yellow;
+    font-weight:bold;
+    border: black 1px solid;
+    padding: 5px 10px;
+}
+
+.productinfo{
+    text-align:center;
+    padding: 30px;
+}
+
+label {
+    text-align:left;
+    margin-right:10px;
+}
+
+#glazingdd {
+    margin-bottom:10px;
+}
+
+/* .dropdown p{
+    margin-top:40px;
+} */
+
+#packsizedd {
+    width: 126px;
+}
+
+/* shopping cart
+*/
+
+.shoppingcart{
+    text-align: center;
+}
+
+
+.remove{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.description{
+    padding: 10px;
+}
+
+.title{
+    padding: 30px;
+    font-size: 30px;
+}
+
+#line{
+    background-color: black;
+    height: 5px;
+    width: 75%;
+    margin: auto;
+}
+
+#total{
+    padding: 30px;
+}
