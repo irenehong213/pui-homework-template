@@ -20,6 +20,7 @@
 }
 
 .currentlink{
+    text-decoration:none;
     background-color: yellow;
     height: 20px;
     font-weight:bold;
@@ -30,6 +31,12 @@
 .notcurrentlink{
     color: black;
     text-decoration:none;
+
+}
+.clickablelink{
+    color: black;
+    text-decoration:none;
+    text-decoration:underline; 
 
 }
 
@@ -90,7 +97,11 @@ hr {
 
 .productpurchase{
     text-align:left;
+    flex-direction:row; 
+    gap: 20px;
+    display:flex; 
     padding-top:170px;
+    font-weight: bold; 
 }
 
 label {
@@ -138,7 +149,7 @@ label {
 #navigation{
     justify-content:flex-end;
     flex-direction:row; 
-    gap:20px;
+    gap:30px;
     display:flex;
     padding-top:50px;
     padding-right:50px;
@@ -215,3 +226,19 @@ label {
     text-align:right;
     padding-right:330px;
 }
+
+.notification {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+
+    background:red;
+    color:white;
+    text-align: center;
+    font-size:medium;
+
+    position:absolute;
+    top:60px;
+    right:30px;
+  }
