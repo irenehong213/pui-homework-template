@@ -1,43 +1,19 @@
 
 let glazing = [
-    {
-        glazing: 'Keep original',
-        price: 0.0,
-    },
-    {
-        glazing: 'Sugar milk',
-        price: 0.0,
-    },
-    {
-        glazing: 'Vanilla milk',
-        price: 0.5,
-    },
-    {
-        glazing: 'Double chocolate',
-        price: 1.50,
-    }
+    {glazing: 'Keep original', price: 0.0},
+    {glazing: 'Sugar milk', price: 0.0},
+    {glazing: 'Vanilla milk', price: 0.5},
+    {glazing: 'Double chocolate', price: 1.50}
 ]
 
 let packsize = [
-    {
-        size: 1,
-        pricefactor: 1,
-    },
-    {
-        size: 3,
-        pricefactor: 3,
-    },
-    {
-        size: 6,
-        pricefactor: 5,
-    },
-    {
-        size: 12,
-        pricefactor: 10,
-    }
+    {size: 1, pricefactor: 1},
+    {size: 3, pricefactor: 3},
+    {size: 6, pricefactor: 5},
+    {size: 12, pricefactor: 10}
 ]
 
-let glazedrop = document.querySelector('#glazingdd');
+let glazingdrop = document.querySelector('#glazingdd');
 let packdrop = document.querySelector('#packsizedd');
 
 for (var i = 0; i < glazing.length; i++) {
@@ -45,7 +21,7 @@ for (var i = 0; i < glazing.length; i++) {
     var optionElement = document.createElement("option");
     optionElement.textContent = option.glazing;
     optionElement.value = option.price;
-    glazedrop.appendChild(optionElement);    
+    glazingdrop.appendChild(optionElement);    
 }
 
 for (var i = 0; i < packsize.length; i++) {
