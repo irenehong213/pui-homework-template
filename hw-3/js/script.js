@@ -1,18 +1,16 @@
 
-/* list of glazing options with price */
-
 let glazing = [
     {
         glazing: 'Keep original',
-        price: 0.00,
+        price: 0.0,
     },
     {
         glazing: 'Sugar milk',
-        price: 0.00,
+        price: 0.0,
     },
     {
         glazing: 'Vanilla milk',
-        price: 0.50,
+        price: 0.5,
     },
     {
         glazing: 'Double chocolate',
@@ -20,7 +18,6 @@ let glazing = [
     }
 ]
 
-/* list of pack size options with price */
 let packsize = [
     {
         size: 1,
@@ -40,39 +37,37 @@ let packsize = [
     }
 ]
 
-let glazingdd = document.querySelector('#glazingdd');
-let packsizedd = document.querySelector('#packsizedd');
+let glazedrop = document.querySelector('#glazingdd');
+let packdrop = document.querySelector('#packsizedd');
 
 for (var i = 0; i < glazing.length; i++) {
     var option = glazing[i];
     var optionElement = document.createElement("option");
     optionElement.textContent = option.glazing;
     optionElement.value = option.price;
-    glazingdd.appendChild(optionElement);    
+    glazedrop.appendChild(optionElement);    
 }
 
 for (var i = 0; i < packsize.length; i++) {
     var option = packsize[i];
     var optionElement = document.createElement("option");
     optionElement.textContent = option.size;
-    optionElement.value = option.priceFactor;
-    packsizedd.appendChild(optionElement);    
+    optionElement.value = option.pricefactor;
+    packdrop.appendChild(optionElement);    
 }
 
 let glazingChange = document.querySelector('#glazingdd');
-glazingChange.addEventListener("change", onSelectChange);
+glazingChange.addEventListener("change", dropdownChange);
 
-let packsizeChange = document.querySelector('#packsizedd');
-packChange.addEventListener("change", onSelectChange);
+let packChange = document.querySelector('#packsizedd');
+packChange.addEventListener("change", dropdownChange);
 
-function onSelectChange() {
-    let glazeAdapt = Number(glazingChange.value);
-    let packAdapt = Number(packsizeChange.value);
-
-    let price = document.querySelector('#calc-price');
-
+function dropdownChange() {
+    let glazeNew = Number(glazingChange.value);
+    let packNew = Number(packChange.value);
+    let price = document.querySelector('.productprice');
     const basePrice = 2.49;
-    let calculatedPrice_rounded = ((basePrice + glazeAdapt) * packAdapt).toFixed(2);    
-    let calculatedPrice= ("$" + calculatedPrice_rounded);
-    price.innerText = calculatedPrice;
+    let calcPrice_rounded = ((basePrice + glazeNew) * packNew).toFixed(2);    
+    let calcPrice= ("$" + calcPrice_rounded);
+    price.innerText = calcPrice;
 }
