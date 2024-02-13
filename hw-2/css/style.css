@@ -20,6 +20,11 @@
 
 }
 
+.clickablelink:hover{
+    font-weight:bold;
+}
+
+
 .link {
     text-transform: uppercase; 
     font-size: 20;
@@ -28,14 +33,14 @@
 
 hr {
     border: none;
-    height: 3px;
+    height: 6px;
     color: black; 
     background-color:black; 
     width: 100%;
   }
 
 #subheader {
-    font-size:larger;
+    font-size:x-large;
     text-align:center;
     width: 60%;
 }
@@ -49,7 +54,14 @@ hr {
     background-color: yellow;
     font-weight:bold;
     border: black 1px solid;
-    padding: 10px 20px;
+    padding: 13px 20px;
+}
+
+#cartbutton{
+    background-color: yellow;
+    font-weight:bold;
+    border: black 1px solid;
+    padding: 4px 20px;
 }
 
 .notification {
@@ -102,11 +114,14 @@ hr {
 /*gallery*/ 
 
 .productgallery{
+    margin-left:100px;
+    margin-right:100px; 
     flex-wrap:wrap;
     flex-direction:row;
     justify-content:center;
-    gap:30px;
+    gap:50px;
     display: flex;
+    text-align:center;
 
 }
 
@@ -119,21 +134,18 @@ hr {
     border: black 3px solid;
     margin-top: 30px;
 }
-.productgallery {
-    text-align:center;
-}
+
 
 #productdescription {
     text-align:left;
-    width:400px;
+    width:300px;
     margin:auto;
     color:black;
 }
 
 .productitem:hover {
-    width:406px; 
+    width:300px; 
     background-color: yellow;
-    font-weight: bold;
 }
 
 /* Product Detail */ 
@@ -152,7 +164,7 @@ hr {
     flex-direction:row; 
     gap: 20px;
     display:flex; 
-    padding-top:170px;
+    padding-top:190px;
     font-weight: bold; 
 }
 
@@ -162,11 +174,18 @@ label {
 }
 
 #glazingdd {
-    margin-bottom:10px;
+    margin-bottom:30px;
+    margin-top:15px;
+    width:220px;
+    height:35px;
+
 }
 
 #packsizedd {
-    width: 126px;
+    margin-top:15px;
+    width:220px;
+    height:35px;
+
 }
 
 .productdetail{
@@ -187,8 +206,15 @@ label {
 }
 
 .dropdownoption{
-    padding-bottom:40px;
+    padding-bottom:100px;
+    font-size:large;
 }
+
+
+
+
+/* shopping cart
+*/
 
 #cartprice{
     text-align:right;
@@ -203,12 +229,8 @@ label {
 
 #cartpurchase{
     text-align:right;
-    padding-right:330px;
+    padding-right:300px;
 }
-
-
-/* shopping cart
-*/
 
 .shoppingcart{
     text-align: center;
@@ -217,6 +239,7 @@ label {
 .remove{
     padding-left:500px;
     text-decoration: underline;
+    font-size:larger;
     font-weight: bold;
 }
 
@@ -227,7 +250,7 @@ label {
 #line{
     background-color: black;
     height: 5px;
-    width: 600px;
+    width: 630px;
     margin-left:500px;
 }
 
@@ -242,7 +265,8 @@ label {
     padding-top:50px;
     padding-left:20px;
     line-height:2;
-    width:250px;
+    width:280px;
+    font-size:larger;
 
 }
 
