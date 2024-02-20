@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/updatePrice.js" defer></script>
+    <script src="js/rollsData.js" defer></script>
+    <script src="js/updateDetail.js" defer></script>
+    <title>Product Detail</title>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logoheader">
+            <div id="logo">
+                <a href="Product Gallery.html">
+                    <img src="assets/logo/logo-01.svg" 
+                    width="400px" 
+                    alt="bun-bun-bakeshop-logo"/>
+                </a> 
+            </div>
+        </div>
+        <div class="nav-links">
+            <p id="navigation" class="link">
+                <a class="currentlink" href="Product Gallery.html">Products</a>
+                <a class="notcurrentlink" href="Shopping Cart.html">Cart</a>
+                <span class="notification">2</span> 
+            </p>
+            <hr>
+            <p id="detailheader">
+                Original Cinnamon Roll 
+            </p>
+        </div>
+    </div>
+    <br>
+
+    <div class="productdetail">
+         <img id="productdetailphoto" 
+            src="assets/products/original-cinnamon-roll.jpg" 
+            width="600" 
+            alt="original-cinnamon-roll"/>
+    <div class="detaildescription">
+            <div class="dropdown">
+                <p class="dropdownoption">
+                    Customize our delicious, hand-making cinnamons to your liking! 
+                </p>
+                <div>
+                    <label for="glazingdd">Glazing:</label> 
+                    <br>
+                    <select name="glazingdd" id="glazingdd"> 
+                      <!--<option value="keep-original">Keep original</option> 
+                        <option value="sugar-milk">Sugar milk</option> 
+                        <option value="vanilla-milk">Vanilla milk</option> 
+                        <option value="double-chocolate">Double chocolate</option>-->
+                    </select>
+                    <br>
+                    <label for="packsizedd">Pack size:</label> 
+                    <br>
+                    <select name="packsizedd" id="packsizedd"> 
+                        <!--<option value="1">1</option> 
+                        <option value="3">3</option> 
+                        <option value="6">6</option> 
+                        <option value="12">12</option>-->
+                    </select>
+                </div>
+            </div>
+
+            <div class="productpurchase">
+                <p class="productprice">$2.49</p>
+                <button id="cartbutton">
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
