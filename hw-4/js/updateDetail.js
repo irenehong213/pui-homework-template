@@ -1,13 +1,3 @@
-class Roll{
-    constructor(rollType, rollGlazing, packSize, basePrice)
-    {
-        this.type=rollType;
-        this.glazing=rollGlazing;
-        this.size=packSize;
-        this.basePrice=basePrice;
-
-    }
-}
 
 //new array for cart//
 const cart = [];
@@ -35,6 +25,17 @@ function render(){
 
     //update product detail base price//
     basePrice.innerText = "$" + selectedRoll.basePrice;
+}
+
+class Roll{
+    constructor(rollType, rollGlazing, packSize, basePrice)
+    {
+        this.type=rollType;
+        this.glazing=rollGlazing;
+        this.size=packSize;
+        this.basePrice=basePrice;
+
+    }
 }
 
 //add roll to array cart//
