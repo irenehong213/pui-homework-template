@@ -1,4 +1,5 @@
 class Roll {
+
     constructor(rollType, rollGlazing, packSize, rollPrice) {
         this.type = rollType;
         this.glazing =  rollGlazing;
@@ -11,13 +12,13 @@ class Roll {
     }
 }
 
-/*function addNewRoll(rollType, rollGlazing, packSize, rollPrice){
+function addNewRoll(rollType, rollGlazing, packSize, rollPrice){
     const roll= new Roll(rollType, rollGlazing, packSize, rollPrice);
     cart.add(roll);
     return roll;
-} */
+}
 
-function removeRoll() {
+function removeRoll(roll) {
     this.element.remove();
     cart.delete(this);
     cartTotal();
@@ -28,33 +29,25 @@ const cart = new Set();
 
 
 //add 4 Roll products to cart//
-let original = "Original";
-let originalRoll = new Roll(original, "Sugar Milk", 1, rolls[original].rollPrice);
-cart.add(originalRoll); 
+const original = "Original";
+const originalRoll = addNewRoll(original, "Sugar Milk", 1, rolls[original].rollPrice);
 
-let walnut = "Walnut";
-let walnutRoll = new Roll(walnut, "Vanilla Milk", 12, rolls[walnut].rollPrice);
-cart.add(walnutRoll);
+const walnut = "Walnut";
+const walnutRoll = addNewRoll(walnut, "Vanilla Milk", 12, rolls[walnut].rollPrice);
 
 let raisin = "Raisin";
-let raisinRoll = new Roll(raisin, "Sugar Milk", 3, rolls[raisin].rollPrice);
-cart.add(raisinRoll);
+let raisinRoll = addNewRoll(raisin, "Sugar Milk", 3, rolls[raisin].rollPrice);
 
 let apple = "Apple";
-let appleRoll = new Roll(apple, "Keep original", 3, rolls[apple].rollPrice);
-cart.add(appleRoll);
+let appleRoll = addNewRoll(apple, "Keep original", 3, rolls[apple].rollPrice);
 
 let cartSection = document.querySelector(".cartproducts");
 
-for (const roll of cart){
-    createElement(roll);
-}
-
-
 
 //template & remove button//
-function createElement(){
-    const template = document.querySelector("#rolltemplate");
+function createElement(roll){
+
+    let template = document.querySelector("#carttemplate");
 
     const clone = template.content.cloneNode(true);
     this.element = clone.querySelector(".cartroll");
@@ -65,11 +58,11 @@ function createElement(){
     const buttonRemove = this.element.querySelector(".remove");
         buttonRemove.onclick = this.removeRoll.bind(this); 
 
-    updateElement(roll);
+    updateElement(Roll);
 }
 
 //update DOM//
-function updateElement() {
+function updateElement(roll) {
     //specific elements in DOM that are updating//
     const rollImage=this.element.querySelector("#productphoto");
     const productName = this.element.querySelector(".cartbun");
@@ -86,12 +79,6 @@ function updateElement() {
     price.innerText="$ " + (totalPrice);
 }
 
-//remove roll from cart//
-function removeRoll() {
-    this.element.remove();
-    cart.delete(this);
-    cartTotal();
-}
 
 function cartTotal(){
     let sumPrice=0;
@@ -121,5 +108,8 @@ function totalPrice(){
     const calculatedPrice = ((this.basePrice+glazeAdapt)*packAdapt).toFixed(2);
     return calculatedPrice; 
 }
-
-
+for (const roll of cart){
+    createElement(roll);
+    updateElement(roll);
+}
+cartTotal();
