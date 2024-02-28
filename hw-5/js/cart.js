@@ -11,6 +11,12 @@ class Roll {
     }
 }
 
+/*function addNewRoll(rollType, rollGlazing, packSize, rollPrice){
+    const roll= new Roll(rollType, rollGlazing, packSize, rollPrice);
+    cart.add(roll);
+    return roll;
+} */
+
 function removeRoll() {
     this.element.remove();
     cart.delete(this);
@@ -40,6 +46,9 @@ cart.add(appleRoll);
 
 let cartSection = document.querySelector(".cartproducts");
 
+for (const roll of cart){
+    createElement(roll);
+}
 
 
 
@@ -113,7 +122,4 @@ function totalPrice(){
     return calculatedPrice; 
 }
 
-for (const roll of cart){
-    createElement(roll);
-}
 
