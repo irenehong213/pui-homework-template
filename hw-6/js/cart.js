@@ -65,6 +65,7 @@ function totalPrice(roll) {
     for (const pack of packsize) {
         if (pack.size == roll.size) {
             packAdapt = pack.pricefactor;
+        console.log(pack.priceFactor)
         }
     }
     let glazeAdapt = 0;
