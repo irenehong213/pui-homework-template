@@ -119,6 +119,7 @@ h1{
 .option{
     display:flex;
     flex-direction: row;
+    gap: 20px;
     position:absolute;
     margin-top:550px;
 }
@@ -199,4 +200,18 @@ h1{
     position:absolute;
     padding-top:20px;
     padding-left:32px;
+}
+
+/* story page 3 */
+.duckpier{
+    position:absolute;
+}
+
+#duckboat{
+    position:absolute;
+    margin-top:340px;
+}
+
+#buttonformat{
+    margin-top:100px;
 }
