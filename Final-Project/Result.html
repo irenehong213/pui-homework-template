@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html class="website">
+<html>
 
 <head>
     <title>Result</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha256-PI8n5gCcz9cQqQXm3PEtDuPG8qx9oFsFctPg0S5zb8g=" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="navbar">
-        <div id="logo">
+<body class="website container">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha256-3gQJhtmj7YnV1fmtbVcnAV6eI4ws0Tr48bVZCThtCGQ=" crossorigin="anonymous"></script>
+    <div class="row navbar">
+        <div class="col-lg-1"id="logo">
             <a href="Quiz Start.html">
                 <img src="assets/logo.png" 
                 width="100px" 
@@ -16,7 +18,7 @@
             </a> 
         </div>
     </div>
-    <div class="scenario">
+    <div>
         <p id="subtext">
             You caught a...
         </p>
@@ -29,53 +31,56 @@
             alt="infp-flapjack-octopus"/>
         </div>
 
-            <div class="resulttraits">
-                <p class="bubble">
+        <div class="resulttraits row gx-5 gy-2" >
+            <div class="col-lg-4 col-md-3 col-sm-12">
+                <div class="bubble">
                     Idealistic 
-                </p>
-                <p class="bubble">
-                    Emotional 
-                </p>
-                <p class="bubble">
-                    Anxious
-                </p>
-            </div>
-        <div class="resultdesc">
-
-            <div class="resultdetail">
-                <div class="outlinebubble">
-                    <h1>
-                        Strengths:
-                    </h1>
-                    <p>Flexible & can adapt to any situation</p>
-                    <p>Cares a lot about those around them</p>
-                    <p>Lots of creative ideas!</p>
                 </div>
-                <div class="outlinebubble">
-                    <h1>
-                        Weaknesses: 
-                    </h1>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-12">
+                <div class="bubble">
+                    Emotional 
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-12">
+                <div class="bubble">
+                    Anxious
+                </div>
+            </div>
+        </div>
+        <div class="resultdesc">
+            <div class="resultdetail row">
+                <div class="outlinebubble col">
+                    Strengths:
+                    <div class="resulttext">
+                        <p>Flexible & can adapt to any situation</p>
+                        <p>Cares a lot about those around them</p>
+                        <p>Lots of creative ideas!</p>
+                    </div>
+                </div>
+                <div class="outlinebubble col">
+                    <p>Weaknesses:</p>
                     <p>Chaotic, all over the place</p>
                     <p>Very self critical</p>
                     <p>Tends to isolate when insecure</p>
                 </div>
             </div>
 
-            <div class="resultdetail">
-                <div class="outlinebubble">
-                    <h1 id="compname">
+            <div class="resultdetail row">
+                <div class="outlinebubble col">
+                    <p id="compname">
                         Very Compatible:
-                    </h1>
+                    </p>
                     <div>
                         <img src="assets/ResultPic/enfj.png"
                         width="200px"
                         alt="enfj-mr-crab"/>
                     </div>
                 </div>
-                <div class="outlinebubble">
-                    <h1 id="compname">
+                <div class="outlinebubble col">
+                    <p id="compname">
                         Not Compatible: 
-                    </h1>
+                    </p>
                     <div>
                         <img src="assets/ResultPic/estj.png"
                         width="200px"

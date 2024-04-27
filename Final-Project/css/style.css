@@ -1,7 +1,6 @@
 /* general website css */
-
-.navbar{
-    text-align: center; 
+.container{
+    text-align:center;
 }
 
 #logo:hover{
@@ -34,6 +33,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.navbar{
+    padding-bottom:100px;
+}
+
 p{
     font-size:15px;
 }
@@ -47,10 +50,13 @@ h1{
     text-align:center;
     color: #00397c;
     font-size: 25px;
-    margin-top: 100px;
+    margin-top: 70px;
 
 }
 
+#startbutton{
+    margin-bottom:50px;
+}
 .storypic{
     display:flex;
     justify-content: center;
@@ -91,7 +97,6 @@ h1{
 
 /* quiz story page */ 
 .storytext{
-    margin-top:50px;
     text-align:center;
     color:#00397c;
     font-size: 18px;
@@ -102,6 +107,7 @@ h1{
     display:flex;
     flex-direction: row;
     gap:900px;
+    margin-bottom: 50px;
 }
 
 .homepic{
@@ -132,19 +138,15 @@ h1{
 /* result page */ 
 .resulttraits{
     margin-top:-100px;
-    display:flex;
-    gap:20px;
-    flex-direction: row;
 }
 .bubble{
-        border-radius: 25px;
-        background:#83B3C8;
-        padding: 10px;
-        width: 80px;
-        height: 15px;
-        color: white; 
-        text-align:center;
+    background:#83B3C8;
+    padding: 10px;
+    color:white;
+    border-radius:25px;
+         
 }
+
 .resultname{
     margin-top:-10px;
     font-size:25px;
@@ -171,29 +173,26 @@ h1{
 .resultdesc{
     display:flex;
     flex-direction:column;
-    gap:10px;
 }
 
 .resultdetail{
     display:flex;
     flex-direction:row;
     gap:20px;
-    padding-top: 10px;
+    padding-top: 30px;
    
 }
 
 .outlinebubble{
     text-align:center;
-    align-content:center;
-    border-radius: 25px;
     border: 3px solid #83B3C8;
-    padding: 20px;
-    width: 180px;
-    height: 150px;
+    padding: 30px;
+    border-radius:25px;
 }
 
 #resultbutton{
     margin-top: -400px;
+    margin-bottom: 50px;
 }
 
 #compname{
