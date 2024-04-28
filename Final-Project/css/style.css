@@ -116,12 +116,10 @@ h1{
 .storytext{
     text-align:center;
     color:#00397c;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .pagebutton{
-    display:flex;
-    flex-direction: row;
     gap:900px;
     margin-bottom: 50px;
 }
@@ -145,9 +143,18 @@ h1{
     position:absolute;
     margin-top:550px;
 }
+.optionitem{
+    border-radius:20px;
+    background-color: #fffcf3;
+
+}
 .optionitem:hover{
     transform: translateY(-5px);
 
+}
+
+.optionitem:focus{
+    background-color: #83B3C8;
 }
 
 
@@ -228,5 +235,6 @@ h1{
 }
 
 #buttonformat{
-    margin-top:100px;
+    margin-top: -300px;
 }
+
