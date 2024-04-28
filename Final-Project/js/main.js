@@ -1,7 +1,7 @@
+//randomize number for results//
 function createScore(){
     return Math.floor(Math.random()* 16);
 }
-
 
 function updateResult(score) {
     // Specific elements in the DOM that need to be updated
@@ -18,7 +18,8 @@ function updateResult(score) {
     const resultWeakness3 = document.querySelector("#weakness3");
     const resultCompatible = document.querySelector("#compatible");
     const resultNotCompatible = document.querySelector("#notcompatible");
-  
+
+  //result data// 
     const results = {
       "istp": {
         "resultName": "Blobfish",
@@ -262,6 +263,7 @@ function updateResult(score) {
       },
     };
   
+    //updating the page with correct elements based on random number//
     if (score >= 0 && score < Object.keys(results).length) {
       const result = results[Object.keys(results)[score]];
       resultImage.src = "assets/ResultPic/" + result.imageFile;
@@ -282,9 +284,10 @@ function updateResult(score) {
       resultName.textContent = 'Invalid Result';
     }
   }
-  
+
+//actually shows the result on the page//
   function showResult() {
-    const score = createScore(); // Assuming createScore() function exists
+    const score = createScore();
     console.log(score);
     updateResult(score);
   }

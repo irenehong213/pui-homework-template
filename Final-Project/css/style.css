@@ -15,11 +15,11 @@
 }
 
 p{
-    font-size:15px;
+    font-size:20px;
 }
 
 h1{
-    font-size:15px;
+    font-size:20px;
 
 }
 
@@ -125,7 +125,7 @@ h1{
 }
 
 .pagebutton{
-    gap:900px;
+    padding-top:80px;
     margin-bottom: 50px;
 }
 
